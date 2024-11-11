@@ -40,22 +40,24 @@ header h1 {
     justify-content: left;
     align-items: center;
 }
-.banner img{
+
+.banner img {
     width: 100vw;
     height: 39.70rem;
     border-radius: 20px;
 }
+
 .banner h1 {
     position: absolute;
     z-index: 2;
     top: 2rem;
-    color:#A6A6A6;
+    color: #A6A6A6;
     font-size: 3rem;
     left: 20rem;
     font-family: 'blinker';
 }
 
-.banner h2{
+.banner h2 {
     position: absolute;
     z-index: 2;
     font-size: 2.5rem;
@@ -65,21 +67,23 @@ header h1 {
     letter-spacing: 2px;
     font-family: 'blinker';
 }
+
 .banner::after {
-    content:'';
+    content: '';
     position: absolute;
     height: 39.70rem;
     width: 80vw;
-    background: linear-gradient(-230deg, rgba(0,0,0,1) 42%, rgba(0,0,0,0) 65%) no-repeat;
+    background: linear-gradient(-230deg, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
+
 .banner::before {
-    content:'';
+    content: '';
     position: absolute;
     height: 50.70rem;
     right: 0;
     top: 0;
     width: 80vw;
-    background: linear-gradient(190deg, rgba(0,0,0,1)20%, rgba(0,0,0,0) 65%) no-repeat;
+    background: linear-gradient(190deg, rgba(0, 0, 0, 1)20%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
 
 main {
@@ -89,8 +93,9 @@ main {
 }
 
 .button {
+    box-shadow: 10px 5px 30px #171510;
     position: absolute;
-    right: 30rem; 
+    right: 30rem;
     top: 50%;
     height: 5rem;
     width: 20rem;
@@ -102,41 +107,111 @@ main {
     font-family: 'blinker';
     color: #A6A6A6;
 }
+
 .button:hover {
     filter: invert();
 }
 
 .container {
+    position: relative;
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url('./images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.forms {
-    color: #A6A6A6;
-    border: 4px solid #A6A6A6;
-    padding: 1rem;
-    border-radius: 4px;
-    width: 400px;
-    height: 500px;
+
+.register {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 6rem;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
 }
-.forms label {
-    font-size: 2rem;
+
+.register-box {
+    height: 35rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5 ease-in-out;
+
+}
+.register-box h2 {
     font-family: blinker;
-    width: 200px;
-    color: #A6A6A6;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
-.forms input {
-    min-width: 10rem;
-    max-width: 10rem;
+.two-forms {
+    display: flex;
+    gap: 10px;
 }
-#date{
+
+.input-field {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
 }
-#nome {
-    margin-left: 11.3rem;
+
+.input-field:hover,
+.input-field:focus {
+    background: rgba(255, 255, 255, .25);
+}
+
+::-webkit-placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.2);
+}
+
+.register-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

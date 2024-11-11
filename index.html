@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/responsive.css">
 
-    <!-- links -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
-</head>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
 
 <body>
     <header>
@@ -26,7 +29,7 @@
     <main>
 
         <div class="banner">
-            <img src="./src/images/banner.jpg" alt="">
+            <img src="./src/images/wallpaper.jpg" alt="">
             <h1>AstroInsights</h1>
             <h2>A sua porta de entrada para a astrologia. Com horóscopos diários, análises de signos e compatibilidade,
                 você pode entender melhor a si mesmo e aos outros. Conecte-se com sua essência e explore as influências
@@ -38,11 +41,31 @@
         </div>
     </main>
     <div id="form" class="container">
-        <div class="forms">
-            <form action="">
-                <label  class="row">Nome:</label><input type="text" name="name" id="nome" /><br>
-                <label class="row">Data de nascimento:</label><input type="date" name="nascimento" id="date"/>
-            </form>
+        <div class="register">
+            <div class="register-box">
+                <h2>Olá, seja bem vindo !!</h2>
+                <div class="two-forms">
+
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Primeiro nome">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Ultimo nome">
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="input-box">
+                    <input type="date" class="input-field" >
+                </div>
+                <div class="input-box">
+                    <input type="text" class="submit" value="Register">
+                </div>
+            </div>
         </div>
     </div>
 </body>
